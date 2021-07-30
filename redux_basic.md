@@ -83,7 +83,7 @@ export default function List() {
 }
 ```
 
-Okay! :metal: Giờ hãy tưởng tượng rằng nếu state này phải được chia sẻ giữa các component cách khá xa nhau trong một cây components :sweat_smile:
+Okay! Giờ hãy tưởng tượng rằng nếu state này phải được chia sẻ giữa các component cách khá xa nhau trong một cây components :sweat_smile:
 > Lúc này từ _ListItem_ ta giả sử chuyền cho component _ListItem1_ trong nó rồi cho _ListItem2_ rồi cho _ListItem3_ để thực hiện method trên :dizzy_face:
 ```jsx
 <>
@@ -101,7 +101,7 @@ Okay! :metal: Giờ hãy tưởng tượng rằng nếu state này phải đư�
 <ListItem3 todo={todo} key={index} id={index} checkComplete={switchComplete}/>
 </>
 ```
-:tired_face: Pha xử lý hết sức cồng kềnh và mệt mỏi phải không? Sẽ ra sao nếu như app của bạn có nhiều state và hàng trăm component? :cold_sweat:
+Pha xử lý hết sức cồng kềnh và mệt mỏi phải không? Sẽ ra sao nếu như app của bạn có nhiều state và hàng trăm component? :cold_sweat:
 
 Điều này sẽ khiến state trở nên khó hơn trong việc duy trì, less predictable và việc quản lý state trong app sẽ trở nên bừa bộn cũng như app trở nên vô cùng phức tạp. Đó là lý do tại sao chúng ta cần một state management tool như **Redux**.
 
